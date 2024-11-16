@@ -42,16 +42,16 @@ public class CustomAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.lv_item, null, true);
 
-            holder.nombreTextView = convertView.findViewById(R.id.nombreTextView);
-            holder.cantidadTextView = convertView.findViewById(R.id.cantidadTextView);
-            holder.fechaVencimientoTextView = convertView.findViewById(R.id.fechaVencimientoTextView);
-            holder.miligramosTextView = convertView.findViewById(R.id.miligramosTextView);
-            holder.presentacionTextView = convertView.findViewById(R.id.presentacionTextView);
-            holder.descripcionTextView = convertView.findViewById(R.id.descripcionTextView);
+            holder.nombreTextView = (TextView) convertView.findViewById(R.id.nombre);
+            holder.cantidadTextView = (TextView) convertView.findViewById(R.id.cantidad);
+            holder.fechaVencimientoTextView = (TextView) convertView.findViewById(R.id.fechaVencimiento);
+            holder.miligramosTextView = (TextView) convertView.findViewById(R.id.miligramos);
+            holder.presentacionTextView = (TextView) convertView.findViewById(R.id.presentacion);
+            holder.descripcionTextView = (TextView) convertView.findViewById(R.id.descripcion);
 
             convertView.setTag(holder);
         }else{
-            holder = (ViewHolder) convertView.getTag();
+            holder = (ViewHolder)convertView.getTag();
         }
 
         holder.nombreTextView.setText("Nombre: " + medicamentosArrayList.get(position).getNombre());

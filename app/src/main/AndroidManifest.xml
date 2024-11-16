@@ -21,8 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.sqlite.UpdateDeleteMed" />
-        <activity android:name="com.example.sqlite.activity_get_all"/>
+        <activity android:name=".activity_get_all" />
+        <activity android:name=".activity_update_delete" />
     </application>
 
 </manifest>

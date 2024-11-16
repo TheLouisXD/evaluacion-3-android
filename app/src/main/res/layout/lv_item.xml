@@ -21,167 +21,82 @@
 
 
     <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Más información"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+
+        android:text="Nombre"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/nombreLabel"
-        android:layout_width="wrap_content"
+        android:id="@+id/cantidad"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Nombre del medicamento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Hobby"
 
-    <EditText
-        android:id="@+id/nombreInput"
-        android:layout_width="368dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:hint="ej: paracetamol"
-        android:inputType="text"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreLabel" />
-
-    <!--Cantidad del medicamento-->
-    <TextView
-        android:id="@+id/cantidadLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Cantidad del medicamento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreInput" />
-
-    <!--Fecha de vencimiento-->
-
-    <EditText
-        android:id="@+id/cantidadInput"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="ej: 10"
-        android:inputType="number"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cantidadLabel" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
-        android:id="@+id/fechaLabel"
-        android:layout_width="wrap_content"
+        android:id="@+id/fechaVencimiento"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Fecha de vencimiento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cantidadInput" />
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Hobby"
 
-    <EditText
-        android:id="@+id/fechaInput"
-        android:layout_width="368dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:clickable="true"
-        android:focusable="false"
-        android:hint="ej: 01/01/2023"
-        android:inputType="none"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fechaLabel" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintTop_toBottomOf="@+id/cantidad"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <!-- Miligramos del remedio -->
     <TextView
-        android:id="@+id/miligramosLabel"
-        android:layout_width="wrap_content"
+        android:id="@+id/miligramos"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Miligramos del remedio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fechaInput" />
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Hobby"
 
-    <EditText
-        android:id="@+id/miligramosInput"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="ej: 100 mg"
-        android:inputType="number"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/miligramosLabel" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintTop_toBottomOf="@+id/fechaVencimiento"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <!-- Presentación o formato del remedio -->
     <TextView
-        android:id="@+id/presentacionLabel"
-        android:layout_width="wrap_content"
+        android:id="@+id/presentacion"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Miligramos del remedio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/miligramosInput" />
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Hobby"
 
-    <Spinner
-        android:id="@+id/presentacionSpinner"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:entries="@array/presentacion"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/presentacionLabel" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintTop_toBottomOf="@+id/miligramos"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <!-- Descripción -->
     <TextView
-        android:id="@+id/descripcionLabel"
-        android:layout_width="wrap_content"
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Miligramos del remedio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/presentacionSpinner" />
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Hobby"
 
-    <EditText
-        android:id="@+id/descripcionInput"
-        android:layout_width="368dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:hint="ej: paracetamol"
-        android:inputType="textMultiLine"
-        android:minLines="4"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcionLabel" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintTop_toBottomOf="@+id/presentacion"
+        tools:layout_editor_absoluteX="0dp" />
 
     <View
         android:id="@+id/botBar"

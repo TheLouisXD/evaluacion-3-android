@@ -5,14 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sqlite.activity_get_all">
+    tools:context="com.example.evaluacion_3.activity_get_all">
 
     <View
         android:id="@+id/topBar"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:background="@color/rojo_inacap"
-        app:layout_constraintBottom_toTopOf="@+id/Logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,66 +30,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar" />
 
-    <LinearLayout
+    <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
         android:padding="16dp"
         android:layout_marginTop="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/Titulo">
+        app:layout_constraintTop_toBottomOf="@+id/Titulo"
+        app:layout_constraintBottom_toTopOf="@+id/botBar">
 
-        <TextView
-            android:id="@+id/nombreTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/cantidadTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/fechaVencimientoTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/miligramosTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/presentacionTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/descripcionTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:textSize="16sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:background="#CCCCCC" />
-
-    </LinearLayout>
+    </ListView>
     <!-- Barra inferior -->
     <View
         android:id="@+id/botBar"
