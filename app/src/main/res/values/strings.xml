@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Evaluacion-3</string>
+    <string-array name="presentacion">
+        <item>Comprimido</item>
+        <item>Liquido</item>
+        <item>Jarabe</item>
+        <item>Polvo</item>
+    </string-array>
+</resources>
