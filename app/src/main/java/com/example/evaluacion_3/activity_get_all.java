@@ -45,8 +45,9 @@ public class activity_get_all extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MedicamentoModel medicamento = medicamentosArrayList.get(position);
                 Intent intent = new Intent(activity_get_all.this, UpdateDeleteMed.class);
-                intent.putExtra("id", medicamentosArrayList.get(position));
+                intent.putExtra("medModel", medicamento);
                 startActivity(intent);
             }
         });

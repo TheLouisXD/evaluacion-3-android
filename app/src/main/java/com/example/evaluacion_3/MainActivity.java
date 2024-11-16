@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         enviarButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+            if (Validacion() == true) {
                 dbManager.addMedicamento(
                         nombreInput.getText().toString(),
 
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 descripcionInput.setText("");
                 Toast.makeText(MainActivity.this, "Medicamento ingresado!!", Toast.LENGTH_SHORT).show();
             }
+        }
         });
 
         listarButton.setOnClickListener (new View.OnClickListener(){
@@ -119,5 +121,28 @@ public class MainActivity extends AppCompatActivity {
         calendar.get(Calendar.YEAR),
         calendar.get(Calendar.MONTH),
         calendar.get(Calendar.DAY_OF_MONTH)).show();
+
+
     }
-}
+
+    // Validacion de inputs
+    private boolean Validacion(){
+        if (nombreInput.getText().toString().isEmpty()) {
+            nombreInput.setError("Ingrese un nombre");
+            return false;
+        }
+
+        if (cantidadInput.getText().toString().isEmpty()) {
+
+            cantidadInput.setError("Debe ingresar una cantidad");
+            return false;
+        }
+
+        if (fechaInput.getText().toString().isEmpty()) {
+            fechaInput.setError("Debe ingresar una fecha");
+            return false;
+        }
+
+        return true;
+
+}}
